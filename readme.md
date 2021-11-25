@@ -1,7 +1,7 @@
 
 # docker-mutli-php-versions
 
-多版本PHP共存的Docker环境，目前支持php5.6以及php7.2共存
+可直接运行的多版本PHP共存的Docker环境，目前支持php5.6以及php7.2共存。
 
 # 文件结构
 
@@ -37,4 +37,33 @@
 
 # 使用方法
 
+启动：
+
+```shell script
+
+docker-composer up -d
+
+```
+
+停止：
+
+```shell script
+
+docker-composer stop
+
+```
+
+重启 nginx
+
+```shell script
+
+docker-composer restart nginx
+
+```
+
 # 注意事项
+
+1. 本地host配置
+2. PHP插件安装
+3. docker内网连接ip问题
+4. docker源问题
