@@ -64,6 +64,15 @@ docker-composer restart nginx
 # 注意事项
 
 1. 本地host配置
+    - host文件添加指向本地配置
 2. PHP插件安装
+    - 在对应PHP版本的Dockerfile文件中使用`docker-php-ext-install`安装
 3. docker内网连接ip问题
+    - 如果需要从内网中连接使用宿主机的id，mac版本需要使用内置`docker.for.mac.host.internal`作为ip配置。
 4. docker源问题
+    - 可以添加国内源提速
+
+# 参考
+
+- [使用 Docker 秒速搭建多版本 PHP 开发环境](https://juejin.cn/post/6980576111818194957)
+- [Docker构建包含PHP多版本的LNMP环境(php53,56,72)](https://0ne.store/2018/01/13/docker-compose-lnmp-multi-php-version/)
