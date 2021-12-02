@@ -61,6 +61,13 @@ docker-composer restart nginx
 
 ```
 
+进入 php 容器
+```
+
+docker-compose exec php56 /bin/bash
+
+docker-compose exec php72 /bin/bash
+```
 # 注意事项
 
 1. 本地host配置
