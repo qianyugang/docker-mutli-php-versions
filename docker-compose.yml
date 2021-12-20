@@ -20,6 +20,8 @@ services:
           aliases:
            - php56site.com # 别名，实现内部互相访问
            - php72site.com
+      environment:
+        TZ: Asia/Shanghai
   php56:
       build: ./php/php56/
       expose:
@@ -32,6 +34,8 @@ services:
         - ./log/php-fpm/:/var/log/php-fpm/:rw
       networks:
         - frontend
+      environment:
+        TZ: Asia/Shanghai
 
   php72:
       build: ./php/php72/
@@ -45,6 +49,8 @@ services:
         - ./log/php-fpm/:/var/log/php-fpm/:rw
       networks:
         - frontend
+      environment:
+        TZ: Asia/Shanghai
 
 networks:
   frontend:
