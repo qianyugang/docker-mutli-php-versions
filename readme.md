@@ -78,6 +78,8 @@ docker-compose exec php72 /bin/bash
     - 如果需要从内网中连接使用宿主机的id，mac版本需要使用内置`docker.for.mac.host.internal`作为ip配置。
 4. docker源问题
     - 可以添加国内源提速
+5. 容器内域名请求
+    - 使用`network`中的`alias`别名实现容器内域名请求
 
 # 参考
 
