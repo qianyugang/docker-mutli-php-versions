@@ -75,7 +75,7 @@ docker-compose exec php72 /bin/bash
 2. PHP插件安装
     - 在对应PHP版本的Dockerfile文件中使用`docker-php-ext-install`安装
 3. docker内网连接ip问题
-    - 如果需要从内网中连接使用宿主机的id，mac版本需要使用内置`docker.for.mac.host.internal`作为ip配置。
+    - 如果需要从内网中连接使用宿主机的ip，mac版本需要使用内置`docker.for.mac.host.internal`作为ip配置。
 4. docker源问题
     - 可以添加国内源提速
 5. 容器内域名请求
