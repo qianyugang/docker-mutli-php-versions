@@ -52,6 +52,21 @@ services:
       environment:
         TZ: Asia/Shanghai
 
+  php74:
+    build: ./php/php74/
+    expose:
+      - "9000"
+    privileged: true
+    volumes:
+      - ./site/:/var/www/html/:rw
+      - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
+      - ./conf/php/php-fpm.d/www.conf:/usr/local/etc/php-fpm.d/www.conf:rw
+      - ./log/php-fpm/:/var/log/php-fpm/:rw
+    environment:
+      TZ: Asia/Shanghai
+    networks:
+      - frontend
+
 networks:
   frontend:
     driver: bridge
