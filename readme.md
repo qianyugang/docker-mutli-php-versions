@@ -1,7 +1,7 @@
 
 # docker-mutli-php-versions
 
-可直接运行的多版本PHP共存的Docker环境，目前支持php5.6以及php7.2共存。
+可直接运行的多版本PHP共存的Docker环境，目前支持 php5.6 / php7.2 / php7.4 共存。
 
 # 文件结构
 
@@ -69,6 +69,8 @@ docker-composer restart nginx
 docker-compose exec php56 /bin/bash
 
 docker-compose exec php72 /bin/bash
+
+docker-compose exec php74 /bin/bash
 ```
 # 注意事项
 
