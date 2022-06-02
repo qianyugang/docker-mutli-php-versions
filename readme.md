@@ -7,10 +7,11 @@
 
 ```
 ├── conf //配置文件
-│   ├── nginx
+│   ├── nginx
 │   │   ├── conf.d
 │   │   │   ├── php56site.com.conf
-│   │   │   └── php72site.com.conf
+│   │   │   ├── php72site.com.conf
+│   │   │   └── php74site.com.conf
 │   │   └── nginx.conf
 │   └── php
 │       ├── php-fpm.d
@@ -18,22 +19,24 @@
 │       └── php.ini
 ├── docker-compose.yml
 ├── log //日志文件
-│   ├── nginx
+│   ├── nginx
 │   │   ├── access.log
 │   │   └── error.log
 │   └── php-fpm
 ├── php
 │   ├── php56
 │   │   └── Dockerfile
-│   └── php72
-│   |   └── Dockerfile
-|   └── php74
+│   ├── php72
+│   │   └── Dockerfile
+│   └── php74
 │       └── Dockerfile
 ├── readme.md
-└── site //网站文件
+└── site //网站目录
     ├── php56site
     │   └── index.php
-    └── php72site
+    ├── php72site
+    │   └── index.php
+    └── php74site
         └── index.php
 ```
 
