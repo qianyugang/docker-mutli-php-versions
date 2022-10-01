@@ -46,7 +46,7 @@
 
 ```shell script
 
-docker-composer up -d
+docker-compose up -d
 
 ```
 
@@ -54,7 +54,7 @@ docker-composer up -d
 
 ```shell script
 
-docker-composer stop
+docker-compose stop
 
 ```
 
@@ -62,7 +62,7 @@ docker-composer stop
 
 ```shell script
 
-docker-composer restart nginx
+docker-compose restart nginx
 
 ```
 
