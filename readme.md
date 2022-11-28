@@ -1,7 +1,7 @@
 
 # docker-mutli-php-versions
 
-可直接运行的多版本PHP共存的Docker环境，目前支持 php5.6 / php7.2 / php7.4 共存。
+可直接运行的多版本PHP共存的Docker环境，目前支持 `php5.6` / `php7.2` / `php7.4` 共存。
 
 # 文件结构
 
