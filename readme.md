@@ -78,15 +78,15 @@ docker-compose exec php74 /bin/bash
 # 注意事项
 
 1. 本地host配置
-    - host文件添加指向本地配置
+    - host文件需要添加指向本地配置的域名。
 2. PHP插件安装
-    - 在对应PHP版本的Dockerfile文件中使用`docker-php-ext-install`安装
+    - 在对应PHP版本的Dockerfile文件中使用`docker-php-ext-install`安装。
 3. docker内网连接ip问题
     - 如果需要从内网中连接使用宿主机的ip，mac版本需要使用内置`docker.for.mac.host.internal`作为ip配置。
-4. docker源问题
-    - 可以添加国内源提速
+4. docker源速度问题
+    - 可以添加国内源或者使用代理提速。
 5. 容器内域名请求
-    - 使用`network`中的`alias`别名实现容器内域名请求
+    - 使用`network`中的别名`alias`实现容器内域名请求。
 
 # 参考
 
