@@ -87,6 +87,8 @@ docker-compose exec php74 /bin/bash
     - 可以添加国内源或者使用代理提速。
 5. 容器内域名请求
     - 使用`network`中的别名`alias`实现容器内域名请求。
+6. 镜像支持问题
+    - 有些镜像比如php:7.4-fpm不再更新了，可以替换为php:7.4-fpm-bullseye之类的新版本，这个需要自行去docker hub找可以使用的镜像。 
 
 # 参考
 
