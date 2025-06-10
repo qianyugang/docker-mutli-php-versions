@@ -1,4 +1,4 @@
-FROM php:5.6-fpm-bullseye
+FROM joellinn/php:5.6-fpm-bullseye
 
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
